@@ -63,7 +63,7 @@ public void user_calls_with_http_request(String resource, String method) {
 	    // Write code here that turns the phrase above into concrete actions
 		assertEquals(response.getStatusCode(),200);
 		
-	
+
 	}
 
 	@Then("{string} in response body is {string}")
