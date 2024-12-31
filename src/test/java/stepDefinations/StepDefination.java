@@ -39,6 +39,8 @@ public void add_Place_Payload_with(String name, String language, String address)
 		 
 		 res=given().spec(requestSpecification())
 		.body(data.addPlacePayLoad(name,language,address));
+		 System.out.println("person2");
+		 
 	}
 
 @When("user calls {string} with {string} http request")
