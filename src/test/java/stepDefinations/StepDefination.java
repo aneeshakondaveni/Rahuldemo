@@ -39,6 +39,9 @@ public void add_Place_Payload_with(String name, String language, String address)
 		 
 		 res=given().spec(requestSpecification())
 		.body(data.addPlacePayLoad(name,language,address));
+		 System.out.println("person2");
+		 System.out.println("person2");
+		 
 	}
 
 @When("user calls {string} with {string} http request")
@@ -55,6 +58,8 @@ public void user_calls_with_http_request(String resource, String method) {
 		 response =res.when().post(resourceAPI.getResource());
 		else if(method.equalsIgnoreCase("GET"))
 			 response =res.when().get(resourceAPI.getResource());
+		System.out.println("person2");
+		 System.out.println("person2");
 		
 }
 
